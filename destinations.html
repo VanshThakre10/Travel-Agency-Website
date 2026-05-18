@@ -76,11 +76,11 @@
         <!-- Categories / Filters -->
         <section class="py-8 bg-white border-b border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-4">
-                <button class="bg-primary text-white px-6 py-2 rounded-full font-medium transition shadow-sm">All</button>
-                <button class="bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition">Beaches</button>
-                <button class="bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition">Mountains</button>
-                <button class="bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition">Cities</button>
-                <button class="bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition">Cultural</button>
+                <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full font-medium transition shadow-sm" data-filter="all">All</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition" data-filter="beaches">Beaches</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition" data-filter="mountains">Mountains</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition" data-filter="cities">Cities</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2 rounded-full font-medium transition" data-filter="cultural">Cultural</button>
             </div>
         </section>
 
@@ -89,7 +89,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Destination 1 -->
-                    <div class="group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative">
+                    <div class="destination-card group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative" data-category="cities">
                         <div class="img-zoom-container h-64 w-full">
                             <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80" alt="Paris" class="w-full h-full object-cover">
                         </div>
@@ -104,7 +104,7 @@
                     </div>
 
                     <!-- Destination 2 -->
-                    <div class="group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative">
+                    <div class="destination-card group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative" data-category="beaches">
                         <div class="img-zoom-container h-64 w-full">
                             <img src="https://images.unsplash.com/photo-1540206351-d7ce9f06a55e?auto=format&fit=crop&w=800&q=80" alt="Bali" class="w-full h-full object-cover">
                         </div>
@@ -119,7 +119,7 @@
                     </div>
 
                     <!-- Destination 3 -->
-                    <div class="group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative">
+                    <div class="destination-card group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative" data-category="cultural">
                         <div class="img-zoom-container h-64 w-full">
                             <img src="https://images.unsplash.com/photo-1498669225721-a4773824ee1d?auto=format&fit=crop&w=800&q=80" alt="Kyoto" class="w-full h-full object-cover">
                         </div>
@@ -134,7 +134,7 @@
                     </div>
 
                     <!-- Destination 4 -->
-                    <div class="group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative">
+                    <div class="destination-card group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative" data-category="mountains">
                         <div class="img-zoom-container h-64 w-full">
                             <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80" alt="Swiss Alps" class="w-full h-full object-cover">
                         </div>
@@ -149,7 +149,7 @@
                     </div>
 
                     <!-- Destination 5 -->
-                    <div class="group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative">
+                    <div class="destination-card group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative" data-category="cities">
                         <div class="img-zoom-container h-64 w-full">
                             <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80" alt="Dubai" class="w-full h-full object-cover">
                         </div>
@@ -164,7 +164,7 @@
                     </div>
 
                     <!-- Destination 6 -->
-                    <div class="group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative">
+                    <div class="destination-card group rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100 hover:shadow-xl transition relative" data-category="beaches">
                         <div class="img-zoom-container h-64 w-full">
                             <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80" alt="Maldives" class="w-full h-full object-cover">
                         </div>
